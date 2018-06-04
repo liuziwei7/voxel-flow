@@ -18,6 +18,13 @@ Further information please contact [Ziwei Liu](https://liuziwei7.github.io/).
 ## Requirements
 * [TensorFlow](https://www.tensorflow.org/)
 
+## Other Implementations
+* [tensorflow-voxel-flow](https://git.sesse.net/?p=voxel-flow)
+* [pytorch-voxel-flow](https://github.com/lxx1991/pytorch-voxel-flow) 
+
+## Data Preparation
+Extract frame triplets from `UCF101` with obvious motion.
+
 ## Getting started
 * Run the training script:
 ``` bash
