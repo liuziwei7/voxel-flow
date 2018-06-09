@@ -43,7 +43,7 @@ for id_img = 1:num_img
 		mse = sum((img_pred_mask(:) - img_target_mask(:)).^2) ./ (3 .* sum(mask_flow(:)));
 		psnr_cur = 20.0 .* log10(255.0) - 10.0 .* log10(mse);
 		
-		[ssim_cur, ~] = ssim(img_pred_gray, img_target_gray);
+		[ssim_cur, ~] = ssim(rgb2gray(uint8(img_pred_mask)), rgb2gray(uint8(img_target_mask)));
 
 		mat_psnr(id_img) = psnr_cur;
 		mat_ssim(id_img) = ssim_cur;
