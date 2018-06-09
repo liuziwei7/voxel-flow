@@ -1,4 +1,4 @@
-clear;clc;
+clear; clc;
 
 num_img = length(subdir);
 flag_valid = zeros(1, num_img, 'single');
@@ -8,12 +8,14 @@ mat_ssim = zeros(1, num_img, 'single');
 for id_img = 1:num_img
 
 	dir_img_cur = [dir_data, subdir(id_img).name, '/'];
+	dir_mask_cur = [dir_mask, subdir(id_img).name, '/'];
 
 	% read images
 	img_pred = imread([dir_img_cur, 'pred_01.png']);
 	img_target = imread([dir_img_cur, 'target_01.png']);
 	img_prev = imread([dir_img_cur, 'frame_00.png']);
 	img_next = imread([dir_img_cur, 'frame_01.png']);
+	mask_flow = imread([dir_mask_cur, 'motion_mask.png']);
 
 	img_pred_ycbcr = rgb2ycbcr(uint8(img_pred));
 	img_target_ycbcr = rgb2ycbcr(uint8(img_target));
@@ -25,8 +27,10 @@ for id_img = 1:num_img
 	img_target = single(img_target);
 	img_prev = single(img_prev);
 
-	img_pred_gray = single(img_pred_gray);x
+	img_pred_gray = single(img_pred_gray);
 	img_target_gray = single(img_target_gray);
+
+	mask_flow = single(mask_flow) ./ 255.0;
 
 	% check validity
 	if sum(mask_flow(:)) > 0
