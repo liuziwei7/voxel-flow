@@ -5,6 +5,10 @@ We address the problem of synthesizing new video frames in an existing video, ei
 
 <img src='./misc/demo.gif' width=810>
 
+## Other Implementations
+* [tensorflow-voxel-flow](https://git.sesse.net/?p=voxel-flow)
+* [pytorch-voxel-flow](https://github.com/lxx1991/pytorch-voxel-flow) 
+
 ## Overview
 `Deep Voxel Flow (DVF)` is the author's re-implementation of the video frame synthesizer described in:  
 "Video Frame Synthesis using Deep Voxel Flow"   
@@ -17,10 +21,6 @@ Further information please contact [Ziwei Liu](https://liuziwei7.github.io/).
 
 ## Requirements
 * [TensorFlow](https://www.tensorflow.org/)
-
-## Other Implementations
-* [tensorflow-voxel-flow](https://git.sesse.net/?p=voxel-flow)
-* [pytorch-voxel-flow](https://github.com/lxx1991/pytorch-voxel-flow) 
 
 ## Data Preparation
 * Training Data: extract frame triplets from `UCF101` with obvious motion.
