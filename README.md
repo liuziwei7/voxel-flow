@@ -25,6 +25,7 @@ Further information please contact [Ziwei Liu](https://liuziwei7.github.io/).
 * [TensorFlow](https://www.tensorflow.org/)
 
 ## Data Preparation
+* [Train/Test Split](https://drive.google.com/open?id=1rwnTfzCEIMFv6xiBGCpSnCUvMufJXdkU)
 * Training Data: extract frame triplets from `UCF101` with obvious motion.
 * [Testing Data](https://drive.google.com/open?id=0B7EVK8r0v71pdHBNdXB6TE1wSTQ)
 * [Motion Masks](https://drive.google.com/open?id=1Uc7ZPsiPf-ViuZusdmz5D4P8E5VewhH6)
