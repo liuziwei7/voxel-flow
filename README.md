@@ -1,7 +1,7 @@
 # Video Frame Synthesis using Deep Voxel Flow
 We address the problem of synthesizing new video frames in an existing video, either in-between existing frames (interpolation), or subsequent to them (extrapolation). Our method requires no human supervision, and any video can be used as training data by dropping, and then learning to predict, existing frames. `Deep Voxel Flow (DVF)` is efficient, and can be applied at any video resolution. We demonstrate that our method produces results that both quantitatively and qualitatively improve upon the state-of-the-art.
 
-**_Note: we encourage you to check out the newly released [pytorch-voxel-flow](https://github.com/lxx1991/pytorch-voxel-flow). Please contact Dr. Xiaoxiao Li (lxx1991@gmail.com) for the pre-trained models of "Deep Voxel Flow"._**
+**_Note: we encourage you to check out the newly released [pytorch-voxel-flow](https://github.com/lxx1991/pytorch-voxel-flow). Please contact Dr. Xiaoxiao Li (lxx1991@gmail.com) for the [pre-trained models](https://drive.google.com/file/d/1FB-mpS4UokiLriDBNJSBmozMQRH0Qez1/view) of "Deep Voxel Flow"._**
 
 [[Project]](https://liuziwei7.github.io/projects/VoxelFlow) [[Paper]](https://arxiv.org/abs/1702.02463) [[Demo]](https://liuziwei7.github.io/projects/voxelflow/demo.html)      
 
